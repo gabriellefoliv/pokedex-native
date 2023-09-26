@@ -6,7 +6,17 @@ import pokemonAnimation from './pokemon.json'
 import * as S from './styles'
 import { Button } from '../../components/Button'
 
+import { useNavigation } from '@react-navigation/native'
+
+
 export function Welcome() {
+    
+    const {navigate} = useNavigation()
+
+    function handleNavigation() {
+        navigate('Home')
+    }
+
     return <S.Container>
         <S.Content>
             <S.WrapperAnimation>
@@ -20,7 +30,7 @@ export function Welcome() {
 
         </S.Content>
         <S.Footer>
-            <Button title='Iniciar'/>
+            <Button title='Iniciar' onPress={handleNavigation}/>
         </S.Footer>
     </S.Container>
 }

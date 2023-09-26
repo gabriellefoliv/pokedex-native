@@ -3,6 +3,7 @@ import api from '../../service/api'
 import * as S from './styles'
 import { Card, Pokemon, PokemonType } from '../../components/Card'
 import { FlatList } from 'react-native'
+import { FadeAnimation } from '../../components/FadeAnimation'
 
 
 // export type PokemonType = {
@@ -63,8 +64,9 @@ export function Home() {
             data={pokemons}
             keyExtractor={pokemon => pokemon.id.toString()}
             renderItem={({item: pokemon}) => (
-
-                <Card data={pokemon}/>
+                <FadeAnimation>
+                    <Card data={pokemon}/>
+                </FadeAnimation>
             )} />
     </S.Container>
 }
