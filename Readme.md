@@ -15,7 +15,7 @@
 - A página About é carregada ao clicar em um dos cards. 
 - Nela, vai carregar as especificações do pokemon selecionado.
 - De novo, todas as informações são puxadas da API e carregadas na página.
-<div display="flex" flex-direction="row" justify-content="center">
+<div display="flex" flex-direction="row" align="center">
     <img src="/src/design/PAbout1.png" width="270">
     <img src="/src/design/PAbout2.png" width="270">
 </div>
