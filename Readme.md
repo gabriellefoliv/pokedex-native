@@ -4,12 +4,16 @@
 
 # Página Welcome
 - A página Welcome é bem básica e possui apenas uma animação do Pokemon para apresentar o app.
-<img src="/src/design/PWelcome.png" align="center" width="270"/>
+<div display="flex" flex-direction="row" align="center">
+    <img src="/src/design/PWelcome.png" align="center" width="270"/>
+</div>
 
 # Página Home
 - A página Home é responsável por puxar as informações da API e organizar os pokemons em cards.
 - Os cards mudam de info de acordo com o Pokemon. É uma tela de Scroll com todos os pokemons da API.
-<img src="/src/design/PHome.png" align="center" width="270"/>
+<div display="flex" flex-direction="row" align="center">
+    <img src="/src/design/PHome.png" align="center" width="270"/>
+</div>
 
 # Página About
 - A página About é carregada ao clicar em um dos cards. 
